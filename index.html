@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Crystal Collector</title>
+    <title>Star Wars RPG Game</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,66 +17,50 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="heading rounded display-4 py-2 mx-2 my-2 text-wrap col-md-6">
-                <h1 class="text-center">Crystals Collector!</h1>
-            </div>
+    <div class="heading rounded display-4 text-wrap col-md-6 ml-auto">
+        <h1 class="text-white text-right">Star Wars RPG!</h1>
+    </div>
+    <div class="clearfix ml-2 characters">
+        <div class="card float-left border-success character" position="1" health-points="120" current-health-points="120" attack-power="8" counter-attack-power="10">
+            <div class="card-header font-weight-bold text-center" >Princess Leia</div>
+            <img class="card-img-top rounded" src="assets/images/leia.jpg" alt="Princess Leia">
+            <div class="card-footer font-weight-bold text-center">120</div>
+        </div>
+        <div class="card float-left border-success character" position="2" health-points="100" current-health-points="100" attack-power="6" counter-attack-power="5">
+            <div class="card-header font-weight-bold text-center">Yoda</div>
+            <img class="card-img-top rounded" src="assets/images/yoda.jpg" alt="Yoda">
+            <div class="card-footer font-weight-bold text-center">100</div>
+        </div>
+        <div class="card float-left border-success character" position="3" health-points="150" current-health-points="150" attack-power="7" counter-attack-power="20">
+            <div class="card-header font-weight-bold text-center">Storm Trooper</div>
+            <img class="card-img-top rounded" src="assets/images/storm.jpeg" alt="Storm Trooper">
+            <div class="card-footer font-weight-bold text-center">150</div>
+        </div>
+        <div class="card float-left border-success character" position="4" health-points="180" current-health-points="180" attack-power="8" counter-attack-power="25">
+            <div class="card-header font-weight-bold text-center">Darth Vader</div>
+            <img class="card-img-top rounded" src="assets/images/vader.jpg" alt="Darth Vader">
+            <div class="card-footer font-weight-bold text-center">180</div>
         </div>
     </div>
 
-    <div class="containter-fluid">
-        <div class="row">
-            <div class="instructions rounded mx-4 col-md-6">
-                <p>You will be given a number at the start of the game.</p>
+    <h5 class="text-white ml-2 your-char-text">Your Character</h5>
 
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                    total score.
-                </p>
+    <div class="images clearfix ml-2 enemies"></div>
 
-                <p>You win the game by matching your total score to the random number. You lose the game if your total score
-                    goes above the randome number.</p>
+    <h5 class="text-white ml-2 enemies-text">Enemies Available To Attack</h5>
 
-                <p>The value of each crystal is hidden from you until you click on it.</p>
+    <h5 class="text-white ml-2">Fight Section</h5>
 
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
-            </div>
-        </div>
-    </div>
+    <button type="button" class="btn btn-light ml-2 attack-button">Attack</button>
 
-    <div class="container mx-2">
-        <div class="row clearfix mt-2">
-            <div class="rounded bg-success float-left fixed-height col-3">
-                <h1><span id="random-number-text">39</span></h1>
-            </div>
-            <div class="rounded ml-2 float-left fixed-height totals col-5">
-                <p id="results-text"></p>
-                <p>Wins: <span id="wins-text"></span></p>
-                <p>Losses: <span id="losses-text"></span></p>
-            </div>
-        </div>
-    </div>
+    <h5 class="text-white ml-2">Defender</h5>
 
-    <div class="clearfix images">
-        <img src="assets/images/Epidote_2.png" id="image1" alt="epidote" class="crystal-image img-thumbnail float-left ml-2 my-2">
-        <img src="assets/images/Gold__rare_crystaline_form.png" id="image2" alt="gold" class="crystal-image img-thumbnail float-left ml-2 my-2">
-        <img src="assets/images/Ilmenite.png" alt="ilmenite" id="image3" class="crystal-image img-thumbnail float-left ml-2 my-2">
-        <img src="assets/images/Ilvanite__with_quartz_and_limonite_Calcium_iron_silicate.png" id="image4" alt="ilvanite" class="crystal-image img-thumbnail float-left ml-2 my-2">
-    </div>
+    <div class="images clearfix ml-2 defender"></div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="bg-info rounded mx-2 text-light col-md-4">
-                <p>Your total score is:</p>
-            </div>
-        </div>
+    <p class="message attack-message1 ml-2 text-white"></p>
+    <p class="message attack-message2 ml-2 text-white"></p>
 
-        <div class="row">
-            <div class="fixed-height bg-info rounded mx-2 text-light col-md-4 my-2">
-                <h1><span id="your-score">0</span></h1>
-            </div>
-        </div>
-    </div>
+    <button type="button" class="btn btn-light ml-2 restart-button" style="display: none;">Restart</button>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>

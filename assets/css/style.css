@@ -1,33 +1,20 @@
-.heading {
-    background-color: coral;
-    color: white;
-}
-
-.instructions{
-    background-color: burlywood;
-    color: darkgreen;
-    font-weight: bold;
-}
-
 body{
     background-image: url(../images/abstract-astro-astronomy-956999.jpg);
 }
 
-.fixed-height{
-    height: 7rem;
+.card-img-top {
+    width: 75%;
+}
+
+.card-header,
+.card-footer{
+    padding: 0;
+}
+
+.images {
+    height: 210px;
 }
 
 img{
-    height:22% !important;
-    width:22% !important;
-    max-height: 150px !important;
-    max-width: 150px !important;
-}
-
-#random-number-text{
-    color: purple;
-}
-
-.totals{
-    background-color: aqua;
+    margin: 0 auto;
 }

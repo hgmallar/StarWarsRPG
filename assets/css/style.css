@@ -3,18 +3,25 @@ body{
 }
 
 .card-img-top {
-    width: 75%;
-    max-width: 300px;
+    max-width: 100%;
+    max-height: 100%
 }
 
 .card{
-    max-width: 250px;
+    max-width: 200px;
     max-height: 250px;
 }
 
 .card-header,
 .card-footer{
     padding: 0;
+    width:100%;
+    background-color: white;
+}
+
+.card-footer{
+    position:absolute;
+    bottom:0;
 }
 
 .images {

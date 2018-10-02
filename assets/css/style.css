@@ -4,6 +4,12 @@ body{
 
 .card-img-top {
     width: 75%;
+    max-width: 300px;
+}
+
+.card{
+    max-width: 250px;
+    max-height: 250px;
 }
 
 .card-header,

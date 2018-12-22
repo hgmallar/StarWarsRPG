@@ -1,5 +1,7 @@
 # Star Wars Game
 
+![frontpage image](starwarsrpg.PNG)
+
 ## Star Wars Game
 * Star Wars themed battle trivia game.  
 
